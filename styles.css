@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+    background: linear-gradient(135deg, #171e32, #0c101c);
+}
+
+iframe { border: none; /* Elimina el borde */ display: block; /* Asegura que no haya espacio en blanco */ }
