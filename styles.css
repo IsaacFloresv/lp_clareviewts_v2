@@ -18,3 +18,10 @@ iframe {
 .footer {
   background-color: #032137;
 }
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  iframe {
+    height: fit-content;
+  }
+}
