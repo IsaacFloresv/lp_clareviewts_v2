@@ -5,8 +5,16 @@
 }
 
 body {
-
-    background: linear-gradient(135deg, #171e32, #0c101c);
+  background: linear-gradient(135deg, #171e32, #0c101c);
 }
 
-iframe { border: none; /* Elimina el borde */ display: block; /* Asegura que no haya espacio en blanco */ }
+iframe {
+  border: none;
+  display: block;
+  padding-top: 10px;
+  overflow:hidden;
+}
+
+.footer {
+  background-color: #032137;
+}
