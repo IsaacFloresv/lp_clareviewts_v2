@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #171e32, #0c101c);
+}
+
+iframe {
+  border: none;
+  display: block;
+  padding-top: 10px;
+  overflow:hidden;
+}
+
+.footer {
+  background-color: #032137;
+}

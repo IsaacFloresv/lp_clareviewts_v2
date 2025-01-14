@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Courier New, Consolas, Lucida Console;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #032137
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #FFD700;
+}
+
+.icohelp {
+    font-size: 1.5em;
+    line-height: .8em;
+    border: 1px solid white;
+    border-radius: 99999px;
+    padding: 0 .1em 0 .2em;
+}
+
+.menu-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-button .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Media Query para dispositivos móviles pequeños */
+@media (max-width: 425px) {
+    .logo img {
+        height: 50px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    .menu-button.change {
+        align-self: flex-start;
+        margin-right: auto;
+    }
+
+    .menu-button.change .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 10px);
+    }
+
+    .menu-button.change .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-button.change .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -10px);
+    }
+
+    .nav-menu.show {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}

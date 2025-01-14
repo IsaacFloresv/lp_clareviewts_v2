@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Courier New, Consolas, Lucida Console;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #171e32, #0c101c);
+}
+
+.content {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    background-color: rgba(9, 13, 24, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.left-text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f1f1f1;
+    padding: 0 1.4em 0 .8em;
+    font-size: 1.5em;
+    line-height: 1.8;
+}
+
+.divider {
+    width: 5px;
+    background-color: #FFD700;
+    align-self: stretch;
+    border-radius: 4px;
+}
+
+.right-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: .7em;
+    font-size: 2.3em;
+    line-height: 1.8;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 4px rgba(217, 219, 136, 0.7);
+}
+
+.right-text h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.lu-services {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    list-style-type: none;
+    padding: 4px;
+    margin: 6px;
+}
+
+.li-services-l,
+.li-services-r {
+    text-align: left;
+    font-size: .75em;
+    font-weight: bold;
+    padding-top: 0.2em;
+}
+
+.li-services-l {
+    width: 42%;
+}
+
+.li-services-r {
+    width: 58%;
+}
+
+.phone {
+    color: #0c101c;
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    border-radius: .4em;
+    text-decoration: none;
+
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
+
+/* Media Query para dispositivos móviles pequeños */
+@media (max-width: 425px) {
+    .hero {
+        padding-top: 1em;
+        height: 200dvw;
+    }
+
+    .content {
+        padding: 0 .4em;
+        flex-direction: column-reverse;
+        height: 200dvw;
+        line-height: 1.5;
+    }
+
+    .left-text {
+        font-size: 1em;
+        padding: .1em 0 .2em 0;
+    }
+
+    .left-text h2 {
+        padding-bottom: .3em;
+    }
+
+    .left-text p {
+        font-size: 1em;
+        padding: .1em 0 .2em 0;
+    }
+
+    .divider {
+        width: 100%;
+        height: 5px;
+        margin: 5px 0;
+    }
+
+    .right-text {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0;
+    }
+
+    .li-services-l,
+    .li-services-r {
+        width: 100%;
+    }
+
+
+
+    .phone {
+        flex-direction: column;
+        text-align: center;
+        padding: .4em;
+    }
+}
