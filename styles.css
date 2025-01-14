@@ -19,18 +19,27 @@ iframe {
   background-color: #032137;
 }
 
-/* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
-  iframe {
-    height: fit-content;
-  }
-}
-
 /* Dispositivos pequeños (teléfonos en modo vertical) */
 @media (max-width: 576px) {
   /* Estilos para pantallas pequeñas */
-  iframe {
-    height: fit-content;
+  .navbar {
+    height: 80px;
+  }
+
+  .hero {
+    height: 700px;
+  }
+
+  .services {
+    height: 1500px;
+  }
+
+  .footer {
+    height: 80px;
+  }
+
+  .navmenu .show {
+    height: 200px;
   }
 }
 
