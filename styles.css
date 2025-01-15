@@ -33,7 +33,14 @@ iframe {
 }
 
 /* Dispositivos pequeños (teléfonos en modo vertical) */
-@media (max-width: 425px) {
+@media (max-width: 375px) {
+  .hero {
+    padding-top:20dvw;
+    height: 900dvw;
+  }
+}
+
+  @media (max-width: 425px) {
   /* Estilos para pantallas pequeñas */
   .navbar {
     height: 80px;
@@ -41,7 +48,7 @@ iframe {
 
   .hero {
     padding-top:20dvw;
-    height: 800dvw;
+    height: 900dvw;
     scroll-margin-top: 70px;
   }
 
@@ -67,7 +74,7 @@ iframe {
   }
 
   .hero {
-    height: 800px;
+    height: 900px;
   }
 
   .services {
