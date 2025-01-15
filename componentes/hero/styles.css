@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #171e32, #0c101c);
+    background: transparent;
 }
 
 .content {

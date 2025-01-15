@@ -11,12 +11,20 @@ body {
 iframe {
   border: none;
   display: block;
-  padding-top: 10px;
-  overflow:hidden;
+}
+
+.navbar{  
+  position: fixed;
+  top: 0; 
+  left: 0;
+}
+
+.hero {
+  margin-top: 7dvw ;
 }
 
 .footer {
-  background-color: #032137;
+  background-color: #032137; 
 }
 
 /* Dispositivos pequeños (teléfonos en modo vertical) */
@@ -27,7 +35,7 @@ iframe {
   }
 
   .hero {
-    height: 700px;
+    height: 950px;
   }
 
   .services {
@@ -46,8 +54,24 @@ iframe {
 /* Dispositivos medianos (teléfonos en modo horizontal y tablets) */
 @media (max-width: 768px) {
   /* Estilos para pantallas medianas */
-  iframe {
-    height: fit-content;
+  .navbar {
+    height: 80px;
+  }
+
+  .hero {
+    height: 700px;
+  }
+
+  .services {
+    height: 1500px;
+  }
+
+  .footer {
+    height: 80px;
+  }
+
+  .navmenu .show {
+    height: 200px;
   }
 }
 

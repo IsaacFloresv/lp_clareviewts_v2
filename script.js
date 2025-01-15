@@ -1,34 +1,46 @@
-document.getElementById("navbar").addEventListener(
-  "click",
+let menuShow = false;
+let iframeLoaded = false;
+let ifnavbar;
+
+window.addEventListener(
+  "message",
   function (event) {
-    console.log("Mensaje recibido:", event.data);
-    if (event.data.target === "section1") {
-      document.getElementById("section1").scrollIntoView();
-    } else if (event.data.target === "section2") {
-      document.getElementById("section2").scrollIntoView();
-    } else if (event.data.target === "section3") {
-      document.getElementById("section3").scrollIntoView();
+    if (event.data.target === "about") {
+      document.getElementById("about").scrollIntoView();
+    } else if (event.data.target === "services") {
+      document.getElementById("services").scrollIntoView();
+    } else if (event.data.target === "contact") {
+      document.getElementById("about").scrollIntoView();
     }
-    accederIframe();
+    if (!iframeLoaded) {
+      accederIframe();
+    }
   },
   false
 );
 
 function accederIframe() {
   // Asegúrate de que el iframe haya cargado completamente
-  var ifnavbar = document.getElementById("navbar");
-  var ifnavbarDocument = ifnavbar.contentDocument || ifnavbar.contentWindow.document;
+  ifnavbar = document.getElementById("navbar");
+  let ifnavbarDocument =  ifnavbar.contentDocument || ifnavbar.contentWindow.document;
 
   // Accede y modifica elementos dentro del iframe
-  var elemento = ifnavbarDocument.getElementById("menu-button")
+  let elemento = ifnavbarDocument.getElementById("menu-button")
   if (elemento) {
-    elemento.addEventListener("click", function (){
-      if(ifnavbar.style.height === "250px"){
-      ifnavbar.style.height = "";
-      }else {ifnavbar.style.height = "250px"}
-  });
-  
-    
-    //
+    console.log("evaluando");
+    elemento.addEventListener("click", function () {
+      showMenu();      
+    });
+    iframeLoaded = true;
+  }
+}
+
+function showMenu() {
+  if (menuShow) {
+    ifnavbar.style.height = "";
+    menuShow = false;
+  } else {
+    ifnavbar.style.height = "250px";
+    menuShow = true;
   }
 }
