@@ -21,6 +21,11 @@ iframe {
 
 .hero {
   margin-top: 7dvw ;
+  scroll-margin-top: 8dvw;
+}
+
+.services {
+  scroll-margin-top: 8dvw;
 }
 
 .footer {
@@ -28,18 +33,21 @@ iframe {
 }
 
 /* Dispositivos pequeños (teléfonos en modo vertical) */
-@media (max-width: 576px) {
+@media (max-width: 425px) {
   /* Estilos para pantallas pequeñas */
   .navbar {
     height: 80px;
   }
 
   .hero {
-    height: 950px;
+    padding-top:20dvw;
+    height: 800dvw;
+    scroll-margin-top: 70px;
   }
 
   .services {
-    height: 1500px;
+    height: 730px;
+    scroll-margin-top: 70px;
   }
 
   .footer {
@@ -59,11 +67,11 @@ iframe {
   }
 
   .hero {
-    height: 700px;
+    height: 800px;
   }
 
   .services {
-    height: 1500px;
+    height: 730dvw;
   }
 
   .footer {

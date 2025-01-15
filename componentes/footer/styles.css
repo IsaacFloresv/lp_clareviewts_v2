@@ -16,3 +16,15 @@ a {
     text-decoration: none;
     color: #FFD700;
 }
+
+@media (max-width: 425px) {
+    footer {
+        text-align: center;
+        padding: 0; 
+        margin: 0 auto;
+    }
+
+    p {
+        text-align: center;
+    }
+}
