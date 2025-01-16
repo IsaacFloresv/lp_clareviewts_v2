@@ -12,7 +12,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 110dvh;
     background: transparent;
 }
 
@@ -228,7 +227,7 @@ body {
       height: fit-content;
     }
   }
-  
+
   /* Dispositivos extra grandes (desktops grandes) */
   @media (max-width: 1440px) {
     /* Estilos para pantallas extra grandes */
