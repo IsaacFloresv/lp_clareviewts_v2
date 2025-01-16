@@ -220,3 +220,20 @@ body {
         padding: .05em;
     }
 }
+
+/* Dispositivos grandes (laptops y desktops) */
+@media (max-width: 992px) {
+    /* Estilos para pantallas grandes */
+    iframe {
+      height: fit-content;
+    }
+  }
+  
+  /* Dispositivos extra grandes (desktops grandes) */
+  @media (max-width: 1200px) {
+    /* Estilos para pantallas extra grandes */
+    .hero {
+        padding-top: .4dvw;
+        height: 210dvw;
+    }
+  }
