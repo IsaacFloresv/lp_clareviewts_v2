@@ -230,7 +230,7 @@ body {
   }
   
   /* Dispositivos extra grandes (desktops grandes) */
-  @media (max-width: 1200px) {
+  @media (max-width: 2636px) {
     /* Estilos para pantallas extra grandes */
     .hero {
         padding-top: .4dvw;
