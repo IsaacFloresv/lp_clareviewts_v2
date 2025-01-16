@@ -234,6 +234,6 @@ body {
     /* Estilos para pantallas extra grandes */
     .hero {
         padding-top: .4dvw;
-        height: 210dvw;
+        height: auto;
     }
   }
