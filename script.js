@@ -40,7 +40,7 @@ function showMenu() {
     ifnavbar.style.height = "";
     menuShow = false;
   } else {
-    ifnavbar.style.height = "250px";
+    ifnavbar.style.height = "250dvw";
     menuShow = true;
   }
 }

@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 690dvh;
+    height: 110dvh;
     background: transparent;
 }
 
@@ -108,6 +108,17 @@ body {
 }
 
 /* Media Query para dispositivos móviles pequeños */
+@media (max-width: 320px) {
+    body {
+        height: 400dvw;
+    }
+
+    .hero {
+        align-items: center;
+        height: 100dvw;
+    }
+}
+
 @media (max-width: 425px) {
     .hero {
         padding-top: .4dvw;
@@ -117,7 +128,7 @@ body {
     .content {
         padding: .2em .9em;
         flex-direction: column-reverse;
-        height: 200dvw;
+        height: 180dvw;
     }
 
     .left-text {
@@ -141,9 +152,60 @@ body {
     }
 
     .right-text {
-        font-size: 1.3em;
+        font-size: 1.5em;
         text-align: center;
-        padding: 5dvw;
+        padding-top: 10dvw;
+        margin: 0;
+    }
+
+    .li-services-l,
+    .li-services-r {
+        width: 100%;
+    }
+
+    .phone {
+        flex-direction: column;
+        text-align: center;
+        padding: .05em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: .4dvw;
+        height: 210dvw;
+    }
+
+    .content {
+        padding: .2em .9em;
+        flex-direction: column-reverse;
+        height: 180dvw;
+    }
+
+    .left-text {
+        font-size: 1em;        
+        line-height: 1.5;
+    }
+
+    .left-text h2 {
+        padding-bottom: .08em;
+    }
+
+    .left-text p {
+        font-size: .9em;
+    }
+
+    .divider {
+        width: 100%;
+        height: 5px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right-text {
+        font-size: 1.5em;
+        text-align: center;
+        padding-top: 10dvw;
         margin: 0;
     }
 

@@ -20,11 +20,12 @@ iframe {
 }
 
 .hero {
-  margin-top: 7dvw ;
-  scroll-margin-top: 8dvw;
+  margin-top: 5dvw ;
+  scroll-margin-top: 7dvw;
 }
 
 .services {
+   margin-top: 5dvw ;
   scroll-margin-top: 8dvw;
 }
 
@@ -33,10 +34,27 @@ iframe {
 }
 
 /* Dispositivos pequeños (teléfonos en modo vertical) */
+@media (max-width: 320px) {
+  .hero {
+    padding-top:20dvw;
+    height: 500dvw;
+  }
+
+  .services {
+    height: 70px;
+    scroll-margin-top: 70px;
+  }
+}
+
 @media (max-width: 375px) {
   .hero {
     padding-top:20dvw;
-    height: 900dvw;
+    height: 700dvw;
+  }
+
+  .services {
+    height: 730px;
+    scroll-margin-top: 70px;
   }
 }
 
@@ -74,7 +92,7 @@ iframe {
   }
 
   .hero {
-    height: 900px;
+    height: 230dvw;
   }
 
   .services {
