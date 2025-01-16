@@ -227,21 +227,3 @@ body {
       height: fit-content;
     }
   }
-
-  /* Dispositivos extra grandes (desktops grandes) */
-  @media (max-width: 1440px) {
-    /* Estilos para pantallas extra grandes */
-    .hero {
-        padding-top: .4dvw;
-        height: auto;
-    }
-  }
-
-  /* Dispositivos extra grandes (desktops grandes) */
-  @media (max-width: 2636px) {
-    /* Estilos para pantallas extra grandes */
-    .hero {
-        padding-top: .4dvw;
-        height: auto;
-    }
-  }
